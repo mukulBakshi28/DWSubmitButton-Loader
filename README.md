@@ -3,12 +3,13 @@ By Changing the Subclass of UIButton to DWSubmitButton Loader Class and make it 
 
 eg :-
 
+```
    ** @IBOutlet weak var submitButton: DWSubmitButton! 
 
 func downloadImageWithProgress(imgProgress:CGFloat) {
 submitButton.progress = imgProgress
 }
-
+```
 **
 
 ## Note -: The iVar "progress" is only called after the button Action 
@@ -19,5 +20,7 @@ You can also use the property **updatingDefaultProgressUntilDone** if you don't 
 
 and after the response of an api call recieve ,you can remove the progress by using the property "completeDefaultProgress" like -:
 
-//On Successful response of the service 
-         submitButton.completeDefaultProgress = true
+**On Successful response of the service **
+```
+ submitButton.completeDefaultProgress = true
+```
